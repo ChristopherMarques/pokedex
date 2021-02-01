@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    
+
+    background: -webkit-linear-gradient(127deg, rgb(243, 242, 245), rgb(248, 248, 214));
+    background: linear-gradient(127deg, rgb(243, 242, 245), rgb(248, 248, 214));
+    
+
+}
+.fa-heart-o {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .fa-heart {
+    color: red;
+    cursor: pointer;
+  }
+  
+  
+  

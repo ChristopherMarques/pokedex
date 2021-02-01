@@ -1,0 +1,21 @@
+{
+  "name": "with-tailwindcss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "autoprefixer": "^10.0.4",
+    "next": "latest",
+    "postcss": "^8.1.10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sbuttons": "^1.1.1",
+    "swr": "^0.4.1",
+    "tailwindcss": "^2.0.2"
+  }
+}

@@ -20,7 +20,7 @@ export default function Home(props) {
         </h2>
         <div class="mt-8 flex justify-center">
             <div class="inline-flex rounded-md bg-gray-200 hover:bg-gray-100 shadow">
-                <a href="https://github.com/ChristopherMarques" target="_blank" class="text-gray-700 font-bold py-2 px-6">
+                <a href="https://github.com/ChristopherMarques/pokedex" target="_blank" class="text-gray-700 font-bold py-2 px-6">
                   <i className="fab fa-github"/> Source Code Here
                 </a>
             </div>

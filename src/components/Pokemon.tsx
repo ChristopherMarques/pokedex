@@ -1,6 +1,6 @@
 import React from 'react';
-import useFetchPokemon from '../useRequest';
-import Heart from '../components/Heart';
+import useFetchPokemon from '../hooks/useRequest';
+import Heart from './Heart';
 
 export default function Pokemon({ pokemon }) {
   const { name } = pokemon
@@ -14,7 +14,7 @@ export default function Pokemon({ pokemon }) {
     
     <div className="max-w-xs">
         <div className="bg-white shadow-xl rounded-lg py-3">
-        <span class="badge mb-3 ml-2 bg-indigo-200 rounded-r-xl rounded-l-xl px-5 opacity- py-1 text-center object-right-top text-indigo font-bold text-sm mr-1"><a className="text-indigo-600">#{result.id}</a></span>
+        <span className="badge mb-3 ml-2 bg-indigo-200 rounded-r-xl rounded-l-xl px-5 opacity- py-1 text-center object-right-top text-indigo font-bold text-sm mr-1"><a className="text-indigo-600">#{result.id}</a></span>
             <div className="photo-wrapper p-2">
                <img className="w-32 h-32 rounded-full mx-auto" src={result.sprites.front_default} alt={name}/>
             </div>

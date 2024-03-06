@@ -2,23 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    
-
-    background: -webkit-linear-gradient(127deg, rgb(243, 242, 245), rgb(248, 248, 214));
-    background: linear-gradient(127deg, rgb(243, 242, 245), rgb(248, 248, 214));
-    
-
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
-.fa-heart-o {
-    color: red;
-    cursor: pointer;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
-  
-  .fa-heart {
-    color: red;
-    cursor: pointer;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: -webkit-linear-gradient(
+    127deg,
+    rgb(243, 242, 245),
+    rgb(248, 248, 214)
+  );
+  background: linear-gradient(127deg, rgb(243, 242, 245), rgb(248, 248, 214));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
-  
-  
-  
+}
